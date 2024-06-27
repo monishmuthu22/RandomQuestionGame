@@ -1,0 +1,40 @@
+score = 0
+print("Welcome To The Random Question Game!")
+start_game = input("Please Type (y) for yes if you would like to play or (n) for no if you wish to not play ").upper()
+if start_game == "Y":
+    print("Let's Get Started!")
+    print('Question 1: The line "To be or not to be" comes from which Shakespeare play? ')
+    answer1 = input().upper()
+    if answer1 == "HAMLET":
+        score += 1
+    else:
+        print("Incorrect Guess")
+    print('Question 2: How many letters are between the letter L and the letter S? ')
+    answer2 = input()
+    if answer2 == "6":
+        score += 1
+    else:
+        print("Incorrect Guess")
+    print('Question 3: What year was the movie "The Titanic" released? ')
+    answer1 = input()
+    if answer1 == "1997":
+        score += 1
+    else:
+        print("Incorrect Guess")
+    print('Question 4: In Greek Mythology who is the goddess of "Wisdom" and "Warfare"? ')
+    answer1 = input().upper()
+    if answer1 == "ATHENA":
+        score += 1
+    else:
+        print("Incorrect Guess")
+    print('Question 5: What is the smallest prime number greater than 10? ')
+    answer1 = input()
+    if answer1 == "11":
+        score += 1
+    else:
+        print("Incorrect Guess")
+    print(f" Your final score is: {score}")
+elif start_game == "N":
+    print("Have a Good Day!")
+else:
+    print("I Do Not Understand What That Means")
